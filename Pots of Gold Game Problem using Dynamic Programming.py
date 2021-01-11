@@ -10,9 +10,6 @@ The objective is to “maximize” the number of coins collected by A, assuming 
 
 Optimal Strategy:
 #Get maximum no.of.gold from the line only by removing gold at end.. Guess optimal ways to get gold coins to win
-
-
-
 def optimal_stategy(line,i,j):
 
     if(i==j):
@@ -29,11 +26,12 @@ golds = [4,6,2,3]
 print("Maximum coins collected by player is", optimal_stategy(golds,0,len(golds)-1))
 
 
+
+
+
 #DYNAMIC PROGRAMMING -  to avoid running recursion over and over on computed strategy
 def calculate(T, i, j):
     return T[i][j] if i <= j else 0
- 
-
     
 def optimalStrategy(coin):
     n = len(coin)
